@@ -1,0 +1,100 @@
+def function(x):
+    print(x * 3 + 3)
+
+function(5)
+
+def function(x):
+    print(pow(3, x))
+function(10)
+
+def function(a, x, y):
+    print(a * x + y)
+function(5, 4, 1)
+
+def function(x, y, z, t):
+    print(pow(x, y) / (z + t))
+function(5, 2, 3, 2)
+
+
+#1
+def greet_customer(grocery_store, special_item, deal):
+    print("Hi, we are " + grocery_store + "!")
+    print("we have " + special_item + " today.")
+    print("it is " + deal + ".")
+greet_customer("costco", "blueberries", "buy one get one free")
+# DONT FORGET TO ADD "" PAY ATTENTION TO THE SMALL DETAILS.
+
+#2
+greet_customer(deal="buy one get one free", grocery_store="costco", special_item="blueberries")
+
+#3
+def greet_customer(grocery_store = "costco", special_item = "blue berries", deal = "buy one get one free"):
+    print("Hi, we are " + grocery_store + "!")
+    print("we have " + special_item + " today.")
+    print("it is " + deal + ".")
+greet_customer()
+
+# ALL 3 OF THEM PRINT SAME RESULT.
+
+def create_spreadsheet(title, row_count=1000):
+    print("Creating a spreadsheet called " + title + " with " + str(row_count) + " rows.")
+
+
+create_spreadsheet("Downloads")
+create_spreadsheet("Applications", 10)
+
+
+
+
+
+def lifting_years(current_year, starting_year):
+    experience = current_year - starting_year
+    return experience
+
+my_experience = lifting_years(2019, 2013)
+friend_experience = lifting_years(2019, 2018)
+print("I have worked out for " + str(my_experience) + " years. My friend has worked out for "
+      + str(friend_experience) + " year.")
+
+
+
+
+
+def function(x, y, z):
+    cubing = x * x * x + y * y * y + z * z * z
+    return cubing  # I guess it always has to return what i wrote in the line above.
+
+print(function(2,2,2))
+
+
+
+
+def get_boundaries(target, margin):
+  low_limit = target - margin
+  high_limit = target + margin
+  # I can write conditionas as many as i want.
+  return low_limit, high_limit
+
+low, high = get_boundaries(100, 20)
+
+# above is same as low = get_boundaries(100, 20)
+#                  high = get_boundaries(100, 20)
+# But it is just replaced with ,
+
+print("Low limit: "+str(low)+", high limit: "+str(high))
+# Also don't forget adding str(), otherwise it will give an error
+
+
+def create_special_string(special_item):
+    return "Our special is " + special_item + "."
+print(create_special_string("berries"))
+
+
+
+current_year = 2019
+def lifting_years(start_year):
+    experience = current_year - start_year
+    return experience
+
+print("I have lifted for " + str(lifting_years(2013)) + " years.")
+
