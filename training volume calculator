@@ -1,0 +1,16 @@
+def total_weight_moved(lift_weight, reps_completed, sets_completed):
+    total_repetition = reps_completed * sets_completed
+    total = lift_weight * total_repetition
+    return total
+
+exercise_name = "bench press"
+bench_press_total_moved = total_weight_moved(225, 12, 5)
+print("You have lifted " + str(bench_press_total_moved) + "lb in " + exercise_name)
+
+exercise_name = "squat"
+squat_total_moved = total_weight_moved(315,10,4)
+print("You have lifted " + str(squat_total_moved) + "lb in " + exercise_name)
+
+exercise_name = "deadlift"
+deadlift_total_moved = total_weight_moved(495,4,5)
+print("You have lifted " + str(deadlift_total_moved) + "lb in " + exercise_name)
