@@ -1,0 +1,72 @@
+#LIST
+
+height_inches = [66, 60, 55, 48, 72]
+# list is in square bracket
+
+ints_and_strings = [1, 2, 3, 'Jason', 'Tom', "Angela"]
+# list can have both integers and strings
+
+heights = [['Jenny', 61], ['Alexus', 70], ['Sam', 67], ['Grace', 64], ["Vik", 68]]
+# list can have more list inside.
+
+
+
+#combining two list by using zip and list
+names = ["Jason", "Amber", "Tom", "Holly"]
+age = [25, 40, 10, 90]
+
+names_age = zip(names, age)
+print(names_age)
+# if just print(names_age), it will return weird statement. add list()
+print(list(names_age))
+
+
+#.append() is adding element to the list. It is for adding a single item to a list.
+workout_list = []
+workout_list.append("bench press")
+print(workout_list)
+
+
+lunch = ["chicken", "potato"]
+healther_lunch = lunch + ["broccoli", "berries"]
+print(lunch)
+print(healther_lunch)
+print(list(lunch))
+
+
+random_numbers = [4, 5, 6, 4, 3, 2]
+random_numbers.append(9)
+print(random_numbers)
+new_random_numbers = random_numbers + [7, 4, 3]
+print(new_random_numbers)
+
+
+# start at 0, will return upto 13
+list1 = range(14)
+print(list)
+print(list(list1))
+
+# will return anything between 3 and 9. starting at 3 and end at 9
+list2 = range(3, 9)
+print(list2)
+print(list(list2))
+
+
+# wow! this is amazing. if ever need multiples of number, use this. starts at 1, goes up by 10, ends at 91
+list3 = range(1, 100, 10)
+print(list(list3))
+
+list4 = range(10, 100, 5)
+print(list(list4))
+
+
+
+#practice more zip.
+
+city = ["Irvine", "Manchester", "San Francisco", "Los Angeles"]
+income = ["$50000", "$64000", "$10000", "$60000"]
+hours_worked = [40, 44, 50, 41]
+
+city_income = zip(city, income, hours_worked)
+print(city_income)
+print(list(city_income))
