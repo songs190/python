@@ -21,6 +21,21 @@ print(names_age)
 print(list(names_age))
 
 
+
+#practice more zip.
+
+city = ["Irvine", "Manchester", "San Francisco", "Los Angeles"]
+income = ["$50000", "$64000", "$10000", "$60000"]
+hours_worked = [40, 44, 50, 41]
+
+city_income = zip(city, income, hours_worked)
+print(city_income)
+print(list(city_income))
+
+
+
+
+
 #.append() is adding element to the list. It is for adding a single item to a list.
 workout_list = []
 workout_list.append("bench press")
@@ -60,13 +75,12 @@ list4 = range(10, 100, 5)
 print(list(list4))
 
 
+#using len() to count how many items are in the list
 
-#practice more zip.
+print(len(list4))
 
-city = ["Irvine", "Manchester", "San Francisco", "Los Angeles"]
-income = ["$50000", "$64000", "$10000", "$60000"]
-hours_worked = [40, 44, 50, 41]
+len_list4 = len(list4)
+print(len_list4)
+#same thing
 
-city_income = zip(city, income, hours_worked)
-print(city_income)
-print(list(city_income))
+
