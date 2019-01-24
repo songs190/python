@@ -84,3 +84,27 @@ print(len_list4)
 #same thing
 
 
+
+
+city = ["Irvine", "Manchester", "San Francisco", "Los Angeles"]
+
+print(city[3])
+
+index3 = city[3]
+print(index3)
+
+print(len(city))
+
+
+
+#FINDING HOW MANY ITEMS ARE IN THE LIST USING []
+how_many_cities_in_the_list = len(city)
+print(how_many_cities_in_the_list)
+
+element3 = city[3]
+last_element = city[-1]
+
+print(element3, last_element)
+# Irvine is always 0 in that list and Los Angeles is always -1, SF is -2, and Machester is -3 and irvine could be -4
+element_minus4 = city[-4]
+print(element_minus4)
