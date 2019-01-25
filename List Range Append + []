@@ -108,3 +108,63 @@ print(element3, last_element)
 # Irvine is always 0 in that list and Los Angeles is always -1, SF is -2, and Machester is -3 and irvine could be -4
 element_minus4 = city[-4]
 print(element_minus4)
+
+
+
+#SLICING LIST / SUB LIST
+city2 = ["Irvine", "Manchester", "San Francisco", "Los Angeles", "New York", "Washington", "Ontario", " London"]
+sub_city = city2[2:5]
+print(sub_city)
+#end is the index of one more than the last index that we want to include. If want 5th, then ends at 6th
+
+sub_city2 = city2[4:8]
+print(sub_city2)
+
+print(city2[4:8])
+
+print(city2[:4])
+# it is okay to not write 0, so instead of 0:4, :4
+print(city2[4:])
+# if want everything after 4th one, 4: is okay too
+
+print(city2[-3:])
+# This will return last 3 items. if -4 then last 4 items
+
+votes = ['Jake', 'Jake', 'Laurie', 'Laurie', 'Laurie', 'Jake', 'Jake', 'Jake', 'Laurie', 'Cassie',
+         'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie']
+
+counting_Jake = votes.count("Jake")
+print(counting_Jake)
+counting_Laurie = votes.count("Laurie")
+print(counting_Laurie)
+
+sort_cities = city2.sort()
+print(sort_cities)
+#above prints NONE.
+
+print(city2)
+# Above will print in Alphabetical order because we sortd by doing city2.sort().
+
+
+
+city3 = ["Auburn", "Irvine", "Manchester", "San Francisco", "Los Angeles", "New York", "Washington", "Ontario", " London"]
+sorted_cities = sorted(city3)
+print(sorted_cities)
+# sort() comes after but.... sorted() comes before....  but they work the same.
+print(city3[-1:])
+
+
+
+
+inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed',
+             'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed',
+             'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+
+inventory_len = len(inventory)
+first = inventory[0]
+last = inventory[-1]
+inventory_2_6 = inventory[2:6]
+first_3 = inventory[:3]
+sort_inventory = inventory.sort()
+twin_beds = inventory.count("twin bed")
+
