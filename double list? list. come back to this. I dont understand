@@ -1,0 +1,63 @@
+city = ["Irvine", "Manchester", "San Francisco", "Los Angeles"]
+
+print(city.index("Irvine"))
+print(len(city))
+
+# Remember. INDEX will return the position of the item i.e 0 1 2 3 4 5
+# len will return HOW MANY ITEMS IS IN THE LIST.
+
+
+
+def double_index(lst, index):
+  if index < len(lst):
+  	lst[index] = lst[index] * 2
+  return lst
+
+print(double_index([3, 8, -10, 12], 2))
+
+# I dont understand this
+
+
+
+
+def remove_middle(lst, start, end):
+  return lst[:start] + lst[end+1:]
+
+print(remove_middle([4, 8, 15, 16, 23, 42], 1, 3))
+
+
+
+def more_than_n(lst, item, n):
+    if lst.count(item) > n:
+        return True
+    else:
+        return False
+
+print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 6, 1))
+
+
+
+
+def more_frequent_item(lst, item1, items2):
+  if lst.count(item1) >= lst.count(items2):
+      return item1
+  else:
+      return items2
+print((more_frequent_item([2, 3, 3, 2, 3, 2, 3, 2, 3], 2, 3)))
+
+
+
+
+
+def middle_element(lst):
+  if len(lst) % 2 == 0:
+    sum = lst[int(len(lst)/2)] + lst[int(len(lst)/2) - 1]
+    return sum / 2
+  else:
+    return lst[int(len(lst)/2)]
+
+
+print(middle_element([5, 2, -10, -4, 4, 5]))
+
+
+DO CHAPTER 4 AGAIN. I DONT UNDERSTAND.
